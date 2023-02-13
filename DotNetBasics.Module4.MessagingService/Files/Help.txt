@@ -1,0 +1,45 @@
+Command list:
+	create message
+					Creates a new message with a title, body, and importance.
+
+	list message --id:n
+					Lists a specific message by id.
+
+	list message --all
+					Lists all created messages.
+
+	list message --importance:[low / 0] [medium / 1] [high / 2]
+					Lists all the messages with the specified importance level.
+
+	delete message --id:n
+					Deletes the specified message by id.
+
+	create recipient
+					Creates a new recipient with a name, email, and phone number.
+
+	list recipient --id:n
+					Lists a specific recipient by id.
+
+	list recipient --all
+					Lists all created recipients.
+
+	delete recipient --id:n
+					Removes the specified recipient by id.
+
+	send message --id:n recipient --id:n --type:[sms / 0] [email / 1] [pop / 2]
+					Sends the specified message (by id) to the specified recipient (by id).
+
+	send message --all recipient --id:n --type:[sms / 0] [email / 1] [pop / 2]
+					Sends all messages to the specified recipient (by id).
+
+	send message --importance:[low / 0] [medium / 1] [high / 2] recipient --id:n --type:[sms / 0] [email / 1] [pop / 2]
+					Sends all messages matching the importance level to the specified recipient (by id).
+
+	help
+					Displays this list of commands.
+
+	clear
+					Clears the console.
+
+	exit
+					Exits the application.
